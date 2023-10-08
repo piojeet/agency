@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">L<i class="ri-circle-line"></i>G<i class="ri-circle-line"></i></div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">services</a></li>
+
+                <div class="checkbox">
+                    <label for="chek">
+                        <input type="checkbox" name="chek" id="chek">
+                        <span></span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+
+        <div id="container">
+            <div class="left-box">
+                <div class="socal-link">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+                <div>
+                    <h1>We're The <br> Best Creative<br>Agency</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatibus ex quasi aut. Dolores
+                        voluptatum iure, earum repellendus velit minus!</p>
+
+                    <a href="#" class="contact">contact us</a>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="shap">
+                    <img src="Businessman - 500x500.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const checkbox = document.querySelector("#chek");
+
+        checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+                document.body.classList.add("darktheme");
+            }
+            else {
+                document.body.classList.remove("darktheme");
+            }
+        });
+    </script>
+</body>
+
+</html>
